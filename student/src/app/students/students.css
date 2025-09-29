@@ -1,0 +1,25 @@
+h2 {
+  color: darkblue;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;              
+}

@@ -1,0 +1,22 @@
+<h2>Book List</h2>
+
+<input [(ngModel)]="authorSearch" placeholder="Search by author" class="search-input"/>
+<button (click)="searchBooks()">Search</button>
+<button (click)="goToAddBook()">Add Book</button>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Title</th><th>Author</th><th>ISBN</th><th>Price</th><th>Published</th><th>Actions</th>
+  </tr>
+  <tr *ngFor="let book of books">
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.isbn }}</td>
+    <td>{{ book.price }}</td>
+    <td>{{ book.publishedDate | date }}</td>
+    <td>
+      <button (click)="goToEditBook(book.id)">Edit</button>
+      <button (click)="deleteBook(book.id)">Delete</button>
+    </td>
+  </tr>
+</table>

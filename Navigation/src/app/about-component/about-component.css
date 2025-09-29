@@ -1,0 +1,9 @@
+body{
+    height: 90vh;
+    margin: 40px;
+}
+p{
+    color: brown;
+    text-align: center;
+    padding: 200px;
+}
